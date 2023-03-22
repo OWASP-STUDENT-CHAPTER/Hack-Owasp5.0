@@ -1,4 +1,4 @@
-.sponsors {
+/* .sponsors {
     background-color: #020221;
     background-repeat: no-repeat;
     background-position: bottom center;
@@ -40,4 +40,37 @@ ul, li {
     display: flex;
     align-items: center;
     position: relative;
+} */
+.sponsor-page-section{
+    position: relative;
+}
+.head-text{
+    color: rgba(16, 17, 48, 1);
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 42px;
+}
+.platinum-sponsor{
+    color: rgba(47, 60, 126, 1);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 42px;
+}
+.gold-sponsor{
+    color: gold;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 42px;
+}
+.silver-sponsor{
+    color: silver;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 42px;
+}
+.local-sponsor{
+    color: #101130;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 42px;
 }
