@@ -55,6 +55,10 @@ header ul li a{
 header ul li  a:hover{
     color: #1a9fe2;
 }
+header.sticky{
+  position: fixed;
+  top: 0;
+}
 .horizontal-line{
     width: 1300px;
     height:1px;
