@@ -1,31 +1,36 @@
-*{
+/* *{
     background-color: #daf8ff;
-}
+} */
 .head-text{
+    text-align: center !important;
     color: rgba(16, 17, 48, 1);
     font-weight: 400;
     font-size: 40px;
     line-height: 42px;
 }
 .platinum-sponsor{
+     text-align: center !important;
     color: rgba(47, 60, 126, 1);
     font-weight: 700;
     font-size: 20px;
     line-height: 42px;
 }
 .gold-sponsor{
+     text-align: center !important;
     color: gold;
     font-weight: 700;
     font-size: 20px;
     line-height: 42px;
 }
 .silver-sponsor{
+     text-align: center !important;
     color: silver;
     font-weight: 700;
     font-size: 20px;
     line-height: 42px;
 }
 .local-sponsor{
+     text-align: center !important;
     color: #101130;
     font-weight: 700;
     font-size: 20px;
