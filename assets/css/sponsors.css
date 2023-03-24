@@ -8,6 +8,23 @@
     font-size: 40px;
     line-height: 42px;
 }
+.Auth_part{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #F20487;
+  top: 20px;
+}
+/*.Auth_part hr{
+  width: 15px;
+  color: #F20487;
+}*/
+.partners_heading h4{
+  text-align: center !important;
+  color: #727272;
+  padding-bottom: 26px;
+  font-size: 15px;
+}
 .platinum-sponsor{
      text-align: center !important;
     color: rgba(47, 60, 126, 1);
