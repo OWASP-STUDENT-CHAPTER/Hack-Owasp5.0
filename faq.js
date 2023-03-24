@@ -1,15 +1,19 @@
-document.querySelectorAll(".faq-card").forEach((card) =>
-  card.addEventListener("click", function () {
-    this.querySelector(".answer").classList.toggle("show");
-    if (this.querySelector(".card-sign").innerHTML === "-") {
-      this.querySelector(".card-sign").innerHTML = "+";
-    } else {
-      this.querySelector(".card-sign").innerHTML = "-";
-    }
+const faqQuestions = document.querySelectorAll(".faq-question");
 
-    console.log("clicked");
-  })
-);
+faqQuestions.forEach((question) => {
+  question.addEventListener("click", (e) => {
+    const answer = e.target.nextElementSibling;
+    const icon = e.target.querySelector(".faq-icon");
+    answer.classList.toggle("active");
+    icon.classList.toggle("minus");
+    e.target.classList.toggle("active");
+    if (answer.classList.contains("active")) {
+      answer.style.height = answer.scrollHeight + "px";
+    } else {
+      answer.style.height = 0;
+    }
+  });
+});
 
 document.querySelector(".butt").addEventListener("click", function () {
   window.location.href = "https://www.instagram.com/";
