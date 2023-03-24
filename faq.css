@@ -3,12 +3,16 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
   background-color: #daf8ff;
   overflow-x: hidden;
 }
 
 h1 {
-  font-weight: 400;
+  font-weight: 100;
 }
 
 h3 {
@@ -19,29 +23,89 @@ h3 {
   color: black;
   position: relative;
   left: 5%;
-  top: 5rem;
+  /* top: 1rem; */
   font-size: 2.5rem;
 }
 
-.faq-card {
-  background-color: #2f3c7e;
-  color: white;
-  padding: 5px 10px 5px 20px;
-  margin-bottom: 1%;
-  cursor: pointer;
+.faq-container {
+  margin: 0 auto;
+  width: 30vw;
   position: relative;
-  left: 70%;
-  width: 25%;
+  top: -2.5rem;
+  left: 30%;
+  font-family: "cairo", serif;
 }
 
+.faq-item {
+  margin-bottom: 10px;
+}
+
+.faq-question {
+  background-color: #2f3c7e;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  transition: background-color 0.5s ease;
+  /* border-radius: 5px; */
+}
+
+.faq-question.active {
+  background-color: #2f3c7e;
+  color: #fff;
+}
+
+.faq-question:hover {
+  background-color: #bf953f;
+}
+
+.faq-answer {
+  display: none;
+  /* background-color: #e6e6e6; */
+  background-color: #5968af;
+  padding: 10px;
+  /* color: #000; */
+  color: white;
+  transition: height 0.5s ease;
+  overflow: hidden;
+  /* border-radius: 5px; */
+}
+
+.faq-answer.active {
+  display: block;
+}
+
+.faq-icon {
+  font-weight: bold;
+  margin-left: 10px;
+  transition: transform 0.5s ease;
+}
+
+.faq-icon.minus {
+  transform: rotate(45deg);
+}
+
+/* Add transition to the height of the answer when closing */
+.faq-answer:not(.active) {
+  height: 0 !important;
+  transition: height 5s ease;
+}
+
+/* footer {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
 .insta-foot {
+  margin-top: auto;
+  width: 100vw;
   background-color: #2f3c7e;
   color: white;
-  position: absolute;
   height: 10rem;
-  bottom: 0;
-  left: 0;
-  right: 0;
+
+  /* overflow: hidden; */
 }
 
 .butt {
@@ -61,54 +125,30 @@ h3 {
   top: 15%;
 }
 
-.answer {
-  display: none;
-}
-.card-sign {
-  display: none;
-  position: relative;
-  left: 95%;
-  top: -2.2rem;
-}
-.show {
-  display: block;
-}
-
-/* header {
-  position: absolute;
-  top: 0;
-  width: 100%;
+.navbarContainer {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 22px;
-}
-header ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 88px;
+  height: 20px;
 }
-header ul li {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  list-style-type: none;
-  text-decoration: none;
-  color: #daf8ff;
-}
-header ul li a {
-  position: relative;
+.navbarContainer li {
   text-decoration: none;
   color: black;
+  list-style: none;
 }
-header ul li a:hover {
-  color: #1a9fe2;
+.navbarContainer a {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+.navbarContainer a:hover {
+  color: #249db8;
 }
 .horizontal-line {
   width: 1300px;
   height: 1px;
   background-color: #18181a;
-  margin-top: 50px;
-} */
+  margin-top: 5px;
+}
