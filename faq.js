@@ -16,5 +16,5 @@ faqQuestions.forEach((question) => {
 });
 
 document.querySelector(".butt").addEventListener("click", function () {
-  window.location.href = "https://www.instagram.com/";
+  window.location.href = "https://www.instagram.com/owasp_tiet/";
 });
