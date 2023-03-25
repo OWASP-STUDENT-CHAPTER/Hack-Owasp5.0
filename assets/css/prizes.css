@@ -1,5 +1,5 @@
 #prizes{
-    background-color:#DAF8FF;
+    background-color:var(--bgd-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
