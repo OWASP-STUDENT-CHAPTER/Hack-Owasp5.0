@@ -40,7 +40,8 @@ body {
 
   .headinglp{
     text-align: center;
-    padding-top: 10px;
+    position: relative;
+    top: 120px;
   }
   
   .sectionTwo {
