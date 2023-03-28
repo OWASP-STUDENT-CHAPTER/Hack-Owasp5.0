@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@300&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-size: 100% auto;
   font-family: poppins;
@@ -1734,6 +1738,7 @@ nav ul li a:hover:after {
     width: 100%;
   }
 }
+
 .footer .angler {
   position: absolute;
   right: 0;
@@ -1754,6 +1759,7 @@ nav ul li a:hover:after {
   transform: scale(1);
   animation: pulse 2600ms ease-in-out infinite alternate;
 }
+
 @media only screen and (max-width: 768px) {
   .footer .angler {
     position: relative;
@@ -1774,11 +1780,13 @@ nav ul li a:hover:after {
     max-width: 400px;
   }
 }
+
 @media only screen and (max-width: 992px) {
   .footer .angler img {
     max-width: 0px;
   }
 }
+
 @keyframes pulse {
   from {
     transform: scale(1);
