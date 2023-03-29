@@ -359,6 +359,141 @@ form .form-inside :placeholder-shown {
 }
 
 
+/* borgor start */
+.burger {
+  width: 100%;
+  z-index: 10;
+}
+
+#menuToggle {
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+
+  z-index: 10;
+
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a {
+  text-decoration: none;
+  color: #232323;
+
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+  color: tomato;
+}
+
+#menuToggle li a {
+  font-size: x-large;
+  color: white;
+}
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  cursor: pointer;
+
+  opacity: 0;
+  /* hide this */
+  z-index: 11;
+  /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+/* span to handle burger  */
+@media only screen and (max-width: 768px) {
+  #menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: #142C4A;
+    border-radius: 3px;
+
+    z-index: 10;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+      opacity 0.55s ease;
+  }
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+/* epic burger lines animation */
+#menuToggle input:checked~span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #142C4A;
+}
+
+#menuToggle input:checked~span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked~span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+  Make this absolute positioned
+  at the top left of the screen
+ */
+#menu {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+
+  background: rgba(93, 89, 89, 0.747);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+
+
+/* slide in from the left */
+#menuToggle input:checked~ul {
+  transform: none;
+}
+
+/* borgor end  */
+
 nav {
   width: 100%;
   z-index: 1;
@@ -423,6 +558,142 @@ nav ul li a:hover:after {
   opacity: 1;
 }
 
+/* social tray start */
+.tray-container {
+  width: 10%;
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+}
+
+.social-container {
+  position: relative;
+}
+
+.social-container .social {
+  background: radial-gradient(100% 70% at 0% 0%,
+      rgba(255, 255, 255, 0.425) 0%,
+      rgba(255, 255, 255, 0.103) 80%);
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 100%;
+  /* width: 70px;
+  height: 70px; */
+  position: relative;
+}
+
+.social-container .social-toggle {
+  position: absolute;
+  font-size: 30px;
+  cursor: pointer;
+  /* width: 70px;
+  height: 70px; */
+  text-align: center;
+  padding-top: 20px;
+  color: black;
+}
+
+.tray-icon {
+  padding-left: 36px;
+}
+
+.social-container .social-drop {
+
+  /* translucent white bg */
+  /* background: rgba(255, 255, 255, 0.4); */
+
+  /* full white bg */
+  /* background: rgb(255, 255, 255); */
+
+  /* original bg  */
+  background: rgba(93, 89, 89, 0.4);
+
+  box-shadow: 0 8px 32px 0 #ffffff;
+
+  /* hacko colored shadow */
+  /* box-shadow: 0 8px 32px 0 #4faba4; */
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  /* padding:10px; */
+
+  height: fit-content;
+  width: 70px;
+
+  /* background: radial-gradient(
+    100% 70% at 0% 0%,
+    rgba(255, 255, 255, 0.425) 0%,
+    rgba(255, 255, 255, 0.103) 80%
+  ); */
+  /* box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25); */
+
+  position: absolute;
+  top: 80px;
+  opacity: 0.9;
+  border-radius: 30px;
+}
+
+.social-container .social-drop ul {
+  margin-top: 10px;
+}
+
+.social-container .social-drop li {
+  font-size: 35px;
+  text-align: center;
+  display: block;
+  margin-top: 15px;
+  margin-left: -23px;
+
+  /* same color as hacko text */
+  /* color: #4faba4; */
+
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background: none;
+}
+
+@media (min-width: 1000px) and (min-height: 1300px) {
+  .social-container .social-drop {
+    top: 380px;
+  }
+}
+
+@media (max-width: 780px) {
+  .tray-icon {
+    padding-left: 36px;
+  }
+
+  .social-container .social-drop {
+    height: 260px;
+    top: 260px;
+    width: 60px;
+  }
+
+  .social-container .social-drop li {
+    font-size: 30px;
+    width: 30px;
+    margin-left: -23px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 950px) and (min-height: 1100px) {
+  .social-container .social-drop {
+    top: 330px;
+  }
+}
+
+@media (max-width: 500px) {
+  .social-container {
+    display: none;
+  }
+}
+
+/* social tray ends */
 
 
 .cloud {
@@ -1370,21 +1641,24 @@ nav ul li a:hover:after {
     transform: perspective(400px) translate(600%, 100%) scale(0.5);
   }
 }
-.typedtext{
+
+.typedtext {
   border-right: 2px solid white;
   animation: blinkTextCursor 800ms steps(44) infinite normal;
   height: 40px;
   color: white;
   display: block;
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: white;
   }
-  @keyframes blinkTextCursor {
-    from {
-      border-right-color: white;
-    }
-    to {
-      border-right-color: transparent;
-    }
+
+  to {
+    border-right-color: transparent;
   }
+}
 
 
 .schedule {
