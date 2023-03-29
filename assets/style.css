@@ -358,6 +358,7 @@ form .form-inside :placeholder-shown {
   color: #FFFFFF;
 }
 
+
 nav {
   width: 100%;
   z-index: 1;
@@ -421,6 +422,8 @@ nav ul li a:hover:after {
   width: 100%;
   opacity: 1;
 }
+
+
 
 .cloud {
   position: absolute;
@@ -1707,7 +1710,10 @@ padding:10px;
 
 @media only screen and (max-width: 768px) {
   .footer {
-    min-height: 500px;
+    /* min-height: 500px; */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
 }
 
@@ -1858,10 +1864,11 @@ padding:10px;
 }
 
 .footer-bottom-left {
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  /* width: 60%; */
+  display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1904,7 +1911,8 @@ padding:10px;
 }
 
 .footer-bottom-right {
-  width: 40%;
+  /* width: 40%; */
+
 }
 
 @media only screen and (max-width: 768px) {
