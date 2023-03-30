@@ -469,8 +469,25 @@ form .form-inside :placeholder-shown {
   }
 }
 
-
-
+@media only screen and (max-width: 768px) {
+  .discordbtn {
+    position: absolute;
+    top: 600px;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    animation: beat 1s infinite alternate;
+    border-radius: 50%;
+    background-color: #5865f2;
+    padding: 10px;
+    margin: 30px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 
 /* epic burger lines animation */
 #menuToggle input:checked~span {
