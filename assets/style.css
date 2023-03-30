@@ -453,7 +453,7 @@ form .form-inside :placeholder-shown {
   border-radius: 50%;
   background-color: #5865f2;
   padding: 10px;
-  margin: 10px;
+  margin: 30px;
   width: 50px;
   height: 50px;
   display: flex;
@@ -2359,14 +2359,37 @@ nav ul li img {
   fill: #FF6154;
 }
 
-/* .footer-bottom-right {
-  width: 40%;
+.containerLanding {
 
-} */
+  align-items: center;
+  padding: 50px;
+}
 
-/* @media only screen and (max-width: 768px) {
-  .footer-bottom-right {
-    width: auto;
-    align-items: center;
-  }
-} */
+.typewriter {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #102E47;
+  font-weight: bold;
+  position: relative;
+  margin: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.typewriter span {
+  color: #4FACA4;
+  border-right: solid #4FACA4 10px; 
+  animation: cursor 1s ease-in-out infinite;
+}
+
+@keyframes cursor {
+  from { border-color: #6F71B0 ;}
+  to { border-color: transparent; }
+}
+
+@media (max-width: 576px) {
+  .typewriter { font-size: 17px!important; }
+}
+@media (max-width: 768px) {
+  .typewriter { font-size: 18px; }
+}

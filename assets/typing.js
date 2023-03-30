@@ -1,5 +1,5 @@
 function typingEffect() {
-    const contactTexts = shuffleArray(['Coming Soon !!!','Stay Tuned']);
+    const contactTexts = shuffleArray(['Coming Soon !','Stay Tuned']);
     const typedtext = document.getElementsByClassName("typedtext")[0];
     let removing = false;
     let idx = char = 0;
