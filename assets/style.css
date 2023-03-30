@@ -1384,6 +1384,75 @@ nav ul li img {
   width: 40px;
   animation: bobbing 6000ms ease-in-out infinite alternate-reverse;
 }
+.Faqs_heading{
+  padding: 0.5rem 1rem;
+}
+.Faqs_section{
+  margin-top: 50px;
+}
+.container{
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.accordion-item{
+  background-color: #142C4A;
+  text-decoration: none;
+  border-radius: .4rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  box-shadow: .5rem 2px .5rem #020221;
+}
+.accordion-link{
+  font-size: 1.6rem;
+  color:rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  background-color: #142C4A;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.accordion-link i{
+  color: #e7d5ff;
+  padding: .5rem; 
+}
+.sub_ion{
+  display: none;
+}
+.answer{
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+  background-color: #0B253A;
+  transition: max-height 650ms ease-in-out;
+}
+.answer::before{
+  content: "";
+  position: absolute;
+  width: .6rem;
+  height: 97%;
+  background-color: #8fc460;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.answer p{
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 2rem;
+}
+.accordion-item:target .answer{
+  max-height: 20rem;
+}
+.accordion-item:target .accordion-link .add_ion{
+  display: none;
+}
+.accordion-item:target .accordion-link .sub_ion{
+  display: block;
+}
 
 .speakers {
   background-color: #001f34;
