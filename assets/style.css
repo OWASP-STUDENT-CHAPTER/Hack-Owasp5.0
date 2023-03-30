@@ -558,6 +558,11 @@ nav ul li a:hover:after {
   opacity: 1;
 }
 
+nav ul li img {
+  height: 7em;
+  margin-right: 0.5em;
+}
+
 /* social tray start */
 .tray-container {
   width: 10%;
