@@ -1647,10 +1647,18 @@ nav ul li img {
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .Tracks_sec {
+    font-size: 24px;
+    padding-top: 35px;
+    position: relative;
+    left: 60%;
+  }
+ }
 .typedtext {
   border-right: 2px solid white;
   animation: blinkTextCursor 800ms steps(44) infinite normal;
-  height: 40px;
+  height: 50px;
   color: white;
   display: block;
 }
@@ -1801,6 +1809,22 @@ nav ul li img {
   width: 76%;
 }
 
+@media only screen and (min-width: 1200px) {
+  .prizes_sec {
+    font-size: 26px;
+    padding-top: 35px;
+    position: relative;
+    left: 40%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .partners_sec {
+    font-size: 26px;
+    padding-top: 35px;
+    position: relative;
+    left: 40%;
+  }
+}
 .partners {
   background-color: #020221;
   background-image: url(./partners-bottom.png);
