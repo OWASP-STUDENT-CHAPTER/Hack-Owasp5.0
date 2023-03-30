@@ -441,8 +441,6 @@ form .form-inside :placeholder-shown {
   transform-origin: 0% 100%;
 }
 
-/*make the dicordbtn inside a purple circle and fix it in the bottom right corner of the landing page with beat fade style*/
-
 .discordbtn {
   position: fixed;
   top: 620;
@@ -1384,19 +1382,23 @@ nav ul li img {
   width: 40px;
   animation: bobbing 6000ms ease-in-out infinite alternate-reverse;
 }
-.Faqs_heading{
+
+.Faqs_heading {
   padding: 0.5rem 1rem;
 }
-.Faqs_section{
+
+.Faqs_section {
   margin-top: 50px;
 }
-.container{
+
+.container {
   width: 100%;
   max-width: 80rem;
   margin: 0 auto;
   padding: 0 1rem;
 }
-.accordion-item{
+
+.accordion-item {
   background-color: #142C4A;
   text-decoration: none;
   border-radius: .4rem;
@@ -1404,9 +1406,10 @@ nav ul li img {
   padding: 1rem;
   box-shadow: .5rem 2px .5rem #020221;
 }
-.accordion-link{
+
+.accordion-link {
   font-size: 1.6rem;
-  color:rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   background-color: #142C4A;
   width: 100%;
@@ -1415,21 +1418,25 @@ nav ul li img {
   justify-content: space-between;
   padding: 1rem 0;
 }
-.accordion-link i{
+
+.accordion-link i {
   color: #e7d5ff;
-  padding: .5rem; 
+  padding: .5rem;
 }
-.sub_ion{
+
+.sub_ion {
   display: none;
 }
-.answer{
+
+.answer {
   max-height: 0;
   overflow: hidden;
   position: relative;
   background-color: #0B253A;
   transition: max-height 650ms ease-in-out;
 }
-.answer::before{
+
+.answer::before {
   content: "";
   position: absolute;
   width: .6rem;
@@ -1439,18 +1446,22 @@ nav ul li img {
   left: 0;
   transform: translateY(-50%);
 }
-.answer p{
+
+.answer p {
   font-size: 1.4rem;
   color: rgba(255, 255, 255, 0.6);
   padding: 2rem;
 }
-.accordion-item:target .answer{
+
+.accordion-item:target .answer {
   max-height: 20rem;
 }
-.accordion-item:target .accordion-link .add_ion{
+
+.accordion-item:target .accordion-link .add_ion {
   display: none;
 }
-.accordion-item:target .accordion-link .sub_ion{
+
+.accordion-item:target .accordion-link .sub_ion {
   display: block;
 }
 
@@ -2362,7 +2373,8 @@ nav ul li img {
 .containerLanding {
 
   align-items: center;
-  padding: 50px;
+  padding-bottom: 35px;
+  padding-top: 50px;
 }
 
 .typewriter {
@@ -2378,18 +2390,28 @@ nav ul li img {
 
 .typewriter span {
   color: #4FACA4;
-  border-right: solid #4FACA4 10px; 
+  border-right: solid #4FACA4 10px;
   animation: cursor 1s ease-in-out infinite;
 }
 
 @keyframes cursor {
-  from { border-color: #6F71B0 ;}
-  to { border-color: transparent; }
+  from {
+    border-color: #6F71B0;
+  }
+
+  to {
+    border-color: transparent;
+  }
 }
 
 @media (max-width: 576px) {
-  .typewriter { font-size: 17px!important; }
+  .typewriter {
+    font-size: 17px !important;
+  }
 }
+
 @media (max-width: 768px) {
-  .typewriter { font-size: 18px; }
+  .typewriter {
+    font-size: 18px;
+  }
 }
