@@ -441,6 +441,39 @@ form .form-inside :placeholder-shown {
   transform-origin: 0% 100%;
 }
 
+/*make the dicordbtn inside a purple circle and fix it in the bottom right corner of the landing page with beat fade style*/
+
+.discordbtn {
+  position: fixed;
+  top: 620;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  animation: beat 1s infinite alternate;
+  border-radius: 50%;
+  background-color: #5865f2;
+  padding: 10px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+
+
+
 /* epic burger lines animation */
 #menuToggle input:checked~span {
   opacity: 1;
@@ -1654,7 +1687,8 @@ nav ul li img {
     position: relative;
     left: 60%;
   }
- }
+}
+
 .typedtext {
   border-right: 2px solid white;
   animation: blinkTextCursor 800ms steps(44) infinite normal;
@@ -1817,6 +1851,7 @@ nav ul li img {
     left: 40%;
   }
 }
+
 @media only screen and (min-width: 1200px) {
   .partners_sec {
     font-size: 26px;
@@ -1825,6 +1860,7 @@ nav ul li img {
     left: 40%;
   }
 }
+
 .partners {
   background-color: #020221;
   background-image: url(./partners-bottom.png);
@@ -2163,26 +2199,26 @@ nav ul li img {
   margin-top: 100px;
 }
 
-.footer-mid-right{
-    margin: 25px 0px;
-  }
-  
-  .footer-mid-right a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .footer-mid-right i {
-    font-size: 2rem;
-    user-select: none;
-  }
-  
-  .footer-mid-right span {
-    position: relative;
-    left: 10px;
-    top: -7px;
-    user-select: none;
-  }
+.footer-mid-right {
+  margin: 25px 0px;
+}
+
+.footer-mid-right a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-mid-right i {
+  font-size: 2rem;
+  user-select: none;
+}
+
+.footer-mid-right span {
+  position: relative;
+  left: 10px;
+  top: -7px;
+  user-select: none;
+}
 
 
 .footer-bottom {
