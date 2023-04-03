@@ -253,7 +253,14 @@ h4 {
   padding: 10px 20px;
   font-size: 12px;
 }
-
+.btn-white{
+  background: white no-repeat;
+  color: blue !important;
+}
+.btn-white:hover {
+  background: blue;
+  color: white !important;;
+}
 .btn-orange {
   background: #E74F43 no-repeat right bottom;
 }
