@@ -1004,23 +1004,25 @@ nav ul li img {
 }
 
 .about_section {
+text-align: justify;
   background: rgba(93, 89, 89, 0.4);
   box-shadow: 0 8px 32px 0 #343434;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  padding: 10px;
+  padding: 22px;
 }
 
 .about_section_1 {
+  text-align: justify;
   background: rgba(93, 89, 89, 0.4);
   box-shadow: 0 8px 32px 0 #343434;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  padding: 18px;
+  padding:  22px;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -1437,7 +1439,7 @@ nav ul li img {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   background-color: #142C4A;
-  width: 100%;
+   width: 100%; 
   display: flex;
   align-items: center;
   justify-content: space-between;
