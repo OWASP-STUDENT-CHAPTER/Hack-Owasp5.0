@@ -2048,6 +2048,16 @@ input#sustain-pre:checked +label.sustain>div.modal-back{
   }
 }
 
+/* .modal-content{
+  --mask:
+    radial-gradient(223.61px at 50% 300.00px,#000 99%,#0000 101%) calc(50% - 200px) 0/400px 51% repeat-x,
+    radial-gradient(223.61px at 50% -200px,#0000 99%,#000 101%) 50% 100px/400px calc(51% - 100px) repeat-x,
+    radial-gradient(223.61px at 50% calc(100% - 300.00px),#000 99%,#0000 101%) calc(50% - 200px) 100%/400px 51% repeat-x,
+    radial-gradient(223.61px at 50% calc(100% + 200.00px),#0000 99%,#000 101%) 50% calc(100% - 100px)/400px calc(51% - 100px) repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+} */
+
 .Faqs_heading {
   font-size: 1.4rem;
   padding: 0.5rem 1rem;
