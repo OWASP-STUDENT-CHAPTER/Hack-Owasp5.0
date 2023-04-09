@@ -1415,12 +1415,18 @@ nav ul li img {
   grid-gap: 80px;
 }
 
-div.tracks-preview{
+
+div.tracks-preview {
   position: relative;
-  transition:transform 0.3s ease-in-out ;
+  transition: transform 0.3s ease-in-out;
   height: 300px;
   width: 300px;
+  background-image: url(../assets/tracks_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
+
 
 #tracks-title{
   position: relative;
@@ -1554,6 +1560,7 @@ input#sustain-pre:checked +label.sustain>div.modal-back{
 /* tracks */
 
 #tracks {
+  margin-top: 80px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -1581,6 +1588,8 @@ input#sustain-pre:checked +label.sustain>div.modal-back{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 70vw;
@@ -1592,61 +1601,73 @@ input#sustain-pre:checked +label.sustain>div.modal-back{
   z-index: 1;
 }
 #tracks #tracks-content .tracks-preview {
-  width: 50%;
-  height: 25vh;
-  margin-top: 10vh;
-  margin-bottom: 20vh;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+  width: calc(50% - 80px);
+  padding: 0px 40px;
+  margin: 10px 40px;
+  background-image: url(../assets/tracks_bg.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
+  transition: transform 0.3s ease-in-out;
   -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
+  flex-direction: row;
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
+
+.tracks-preview:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+@media (min-width: 769px) {
+  #tracks #tracks-content .tracks-preview:nth-child(5) {
+    width: 50%;
+    margin: 10px 25%;
+  }
+}
+
 @media (max-width: 768px) {
   #tracks #tracks-content .tracks-preview {
     width: 100%;
-    margin: 0;
+    margin: 20px 60px;
   }
 }
 @media (max-width: 576px) {
   #tracks #tracks-content .tracks-preview {
     width: 100%;
-    margin-top: 3vh;
-    margin-bottom: 0;
+    margin: 30px 30px;
   }
 }
 #tracks #tracks-content .tracks-preview .tracks-title {
   z-index: 2;
   color: #f0ffe4;
   font-size: calc(max(2vw, 1.2rem));
-  background-color: rgba(15, 61, 102, 0.5);
-  padding-left: 5vw;
-  padding-right: 5vw;
-  border-radius: 20px;
 }
 #tracks #tracks-content .tracks-preview .tracks-img {
-  height: 30vh;
+  /* height: 30vh;
   max-width: 25vw;
-  margin-top: calc(-1 * 30vh / 2);
+  margin-top: calc(-1 * 30vh / 2); */
+  margin: none;
+  height: 75%;
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   #tracks #tracks-content .tracks-preview .tracks-img {
-    height: 40vh;
-    max-width: 50vw;
-    margin-top: calc(-1 * 40vh / 2);
+    height: 35vw;
   }
 }
 #tracks #tracks-content .tracks-preview:hover {
-  -webkit-animation: selected-track 3s ease infinite;
-  animation: selected-track 3s ease infinite;
+  /* -webkit-animation: selected-track 3s ease infinite;
+  animation: selected-track 3s ease infinite; */
   cursor: pointer;
 }
 #tracks #tracks-content .tracks-preview:hover .tracks-title {
