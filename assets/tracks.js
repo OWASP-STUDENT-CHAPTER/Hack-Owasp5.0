@@ -1,5 +1,5 @@
 // modals in preview order
-const modalArr = ["hosp", "def", "hel", "fin", "opin"];
+const modalArr = ["hosp", "def", "hel", "fin", "opin", "spon"];
 const navbarArr = ["desc", "questions", "resources"];
 
 const modals = [...document.getElementsByClassName("tracks-modal")];

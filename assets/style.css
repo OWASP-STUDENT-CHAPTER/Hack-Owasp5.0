@@ -1629,12 +1629,12 @@ input#sustain-pre:checked +label.sustain>div.modal-back{
   transition: transform 0.3s ease-in-out;
 }
 
-@media (min-width: 769px) {
+/*@media (min-width: 769px) {
   #tracks #tracks-content .tracks-preview:nth-child(5) {
     width: 50%;
     margin: 10px 25%;
   }
-}
+}*/
 
 @media (max-width: 768px) {
   #tracks #tracks-content .tracks-preview {
