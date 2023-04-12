@@ -1706,11 +1706,12 @@ input#sustain-pre:checked +label.sustain>div.modal-back{
 	border-radius: 20px;
 	margin: 8vw;
 	padding: 2vw;
-	z-index: 100;
+	z-index: 99999999;
 }
 @media (max-width: 768px) {
 	#tracks .tracks-modal .modal-content {
 		padding: 6vw;
+		z-index: 99999999;
 	}
 }
 #tracks .tracks-modal .modal-content .modal-exit {
