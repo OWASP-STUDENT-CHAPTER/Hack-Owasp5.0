@@ -1576,7 +1576,7 @@ input#sustain-pre:checked +label.sustain>div.modal-back{
 #tracks #tracks-heading {
 	color: #0f3d66;
 	font-size: 4rem;
-	z-index: 5;
+	z-index: 9999999;
 	margin-bottom: 1vw;
 }
 @media (max-width: 576px) {
@@ -1598,7 +1598,7 @@ input#sustain-pre:checked +label.sustain>div.modal-back{
 	-webkit-box-flex: 1;
 	-ms-flex-positive: 1;
 	flex-grow: 1;
-	z-index: 1;
+	z-index: 999999;
 }
 #tracks #tracks-content .tracks-preview {
 	cursor: pointer;
@@ -1706,7 +1706,7 @@ input#sustain-pre:checked +label.sustain>div.modal-back{
 	border-radius: 20px;
 	margin: 8vw;
 	padding: 2vw;
-	z-index: 100;
+	z-index: 999999999;
 }
 @media (max-width: 768px) {
 	#tracks .tracks-modal .modal-content {
@@ -2175,7 +2175,7 @@ input#sustain-pre:checked +label.sustain>div.modal-back{
 	width: 100%;
 	display: flex;
 	margin: 0 auto;
-	z-index: 1;
+	z-index: 0;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -2194,9 +2194,83 @@ input#sustain-pre:checked +label.sustain>div.modal-back{
 	width: 60%;
 }
 
+.speakers-top-left .prizes_sec {
+	display: flex;
+	align-items: flex-start;
+	margin-top: 25vh;
+	justify-content: center;
+	/* align-items: center; */
+	/* min-height: 70vh; */
+	min-width: 100vw;
+	/* perspective: 1000px; */
+	margin-left: -30vw;
+}
+
+.speakers-top-left .prizes_sec .card {
+	width: 320px;
+	min-height: 500px;
+	background-color: rgba(3, 238, 255, 0.5);
+	border-radius: 15px;
+	border: 2px solid rgba(3, 238, 255, 0.9);
+	padding: 20px 10px;
+	margin: 55px;
+	margin-top: -150px;
+	perspective: 1000px;
+	transform-style: preserve-3d;
+	transform: rotateY(0deg);
+	transition: transform 0.5s ease-out;
+}
+.speakers-top-left .prizes_sec .card:hover {
+	/* background-color: rgba(3, 238, 255, 0.9); */
+	border: 2px solid;
+	box-shadow: 5px 5px 5px #888;
+	/* transform: rotate(360deg); */
+	/* backdrop-filter: blur(5px); */
+	transform: perspective(1000px) rotateY(10deg) rotateX(-10deg);
+}
+.speakers-top-left .prizes_sec .card h1 {
+	font-size: 26px;
+	text-align: center;
+	color: #fff;
+	margin-bottom: 30px;
+}
+
+.speakers-top-left .prizes_sec .card span {
+	color: white;
+	font-size: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+	.speakers-top-left .prizes_sec {
+		margin-left: -8vw;
+		align-items: flex-start;
+		margin-top: 30vh;
+	}
+	.speakers-top-left .prizes_sec .card {
+		margin: 30px;
+		margin-top: -150px;
+	}
+	.speakers-top-left .prizes_sec .card h1 {
+		font-size: 26px;
+	}
+	.speakers-top-left .prizes_sec .card span {
+		font-size: 20px;
+	}
+}
+
 @media only screen and (max-width: 768px) {
 	.speakers-top-left {
 		width: auto;
+	}
+	.speakers-top-left .prizes_sec {
+		flex-direction: column;
+		align-items: flex-start;
+		margin-top: 0vh;
+		/* justify-content: center; */
+		align-items: center;
+	}
+	.speakers-top-left .prizes_sec .card {
+		margin-top: 10px;
 	}
 }
 
@@ -2218,7 +2292,7 @@ input#sustain-pre:checked +label.sustain>div.modal-back{
 .speakers-middle {
 	padding: 0 0 0 12vw;
 	width: 100%;
-	z-index: 1;
+	z-index: 0;
 	margin-top: 50px;
 }
 
@@ -2289,7 +2363,7 @@ input#sustain-pre:checked +label.sustain>div.modal-back{
 	padding: 0;
 	border: none;
 	outline: none;
-	z-index: 1;
+	z-index: 0;
 	opacity: 0.5;
 	transition: all 0.2s;
 }
@@ -2522,7 +2596,7 @@ input#sustain-pre:checked +label.sustain>div.modal-back{
 	padding: 0 12vw;
 	display: flex;
 	margin: 0 auto;
-	z-index: 1;
+	z-index: 0;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -2545,7 +2619,7 @@ input#sustain-pre:checked +label.sustain>div.modal-back{
 	width: 100%;
 	padding: 0 12vw;
 	margin: 0 auto;
-	z-index: 1;
+	z-index: 0;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -2647,7 +2721,7 @@ input#sustain-pre:checked +label.sustain>div.modal-back{
 	padding: 0 12vw;
 	display: flex;
 	margin: 0 auto;
-	z-index: 1;
+	z-index: 0;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -2700,7 +2774,7 @@ input#sustain-pre:checked +label.sustain>div.modal-back{
 	width: 100%;
 	padding: 0 12vw;
 	margin-bottom: 20px;
-	z-index: 1;
+	z-index: 0;
 }
 
 @media only screen and (max-width: 1200px) {
