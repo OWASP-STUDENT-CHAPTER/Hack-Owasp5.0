@@ -3253,3 +3253,41 @@ input#sustain-pre:checked +label.sustain>div.modal-back{
 		font-size: 18px;
 	}
 }
+
+.all-part-cards{
+	height: 574.14px;
+}
+
+.spons-pr-button-div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+}
+.spons-pr-button-div p{
+	text-align: center;
+}
+
+.sponsor-prizes-btn{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	color: #001f34;
+	width: 70%;
+	height: 40px;
+	border: none;
+	border-radius: 25px;
+}
+.sponsor-prizes-btn a{
+	/* background-color: white; */
+	color: #001f34;
+	text-decoration: none;
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	margin-top: 18px;
+	
+}
+
