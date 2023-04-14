@@ -1,0 +1,80 @@
+.judges-h4, .text-muted{
+    color: white;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+.judges-top-left{
+    width: 76%;
+}
+
+.text-muted{
+    margin-top: 5px;
+}
+
+.judges-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40vw;
+}
+
+.judges-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.judges-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.judges-block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 30px;
+}
+
+.img-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rounded-img{
+    width: 250px;
+    border-radius: 500px;
+    border: 8px solid rgba(255, 255, 255, 0.273);
+}
+
+.judges-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+    .judges-section{
+        height: auto;
+    }
+    .judges-container{
+        flex-direction: column;
+    }
+    .judges-row{
+        flex-direction: column;
+    }
+    .judges-block{
+        margin: 20px 0px;
+    }
+  }
+
+
+
