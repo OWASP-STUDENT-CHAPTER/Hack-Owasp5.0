@@ -2196,6 +2196,7 @@ input#sustain-pre:checked +label.sustain>div.modal-back{
 
 .speakers-top-left .prizes_sec {
 	display: flex;
+	flex-direction: row;
 	align-items: flex-end !important;
 	margin-top: 25vh;
 	justify-content: center;
