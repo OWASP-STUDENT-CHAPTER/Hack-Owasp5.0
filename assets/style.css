@@ -2230,9 +2230,9 @@ input#sustain-pre:checked +label.sustain>div.modal-back{
 }
 
 .speakers-top-left .prizes_sec:nth-child(2) {
-	margin-top: calc(25vh + 100px)
+	margin-top: calc(25vh + 100px);
 }
-.speakers-top-left .prizes_sec:nth-child(2) .card  {
+.speakers-top-left .prizes_sec:nth-child(2) .card {
 	padding-top: 150px;
 }
 
@@ -2288,6 +2288,14 @@ input#sustain-pre:checked +label.sustain>div.modal-back{
 .card-mobile {
 	display: none;
 }
+.prizes-list {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 0 12vw;
+	margin-bottom: 20px;
+	z-index: 0;
+}
 
 @media only screen and (max-width: 1200px) {
 	.speakers-top-left .prizes_sec {
@@ -2308,7 +2316,7 @@ input#sustain-pre:checked +label.sustain>div.modal-back{
 	.prizes_sec .card img {
 		height: 200px;
 	}
-	.speakers-top-left .prizes_sec:nth-child(2) .card  {
+	.speakers-top-left .prizes_sec:nth-child(2) .card {
 		padding-top: 100px;
 	}
 }
@@ -2342,7 +2350,7 @@ input#sustain-pre:checked +label.sustain>div.modal-back{
 	.speakers-top-left .prizes_sec:nth-child(2) {
 		margin-top: 0;
 	}
-	.speakers-top-left .prizes_sec:nth-child(2) .card  {
+	.speakers-top-left .prizes_sec:nth-child(2) .card {
 		margin-top: 100px;
 	}
 }
