@@ -2196,7 +2196,7 @@ input#sustain-pre:checked +label.sustain>div.modal-back{
 
 .speakers-top-left .prizes_sec {
 	display: flex;
-	align-items: flex-start;
+	align-items: flex-end !important;
 	margin-top: 25vh;
 	justify-content: center;
 	/* align-items: center; */
@@ -2206,12 +2206,19 @@ input#sustain-pre:checked +label.sustain>div.modal-back{
 	margin-left: -30vw;
 }
 
+/* new card code  start here*/
+
+/* new card code  end here*/
+
 .speakers-top-left .prizes_sec .card {
 	width: 320px;
 	min-height: 500px;
-	background-color: rgba(3, 238, 255, 0.5);
+	backdrop-filter: ;
+	background-color: rgba(33, 92, 108, 0.7);
 	border-radius: 15px;
-	border: 2px solid rgba(3, 238, 255, 0.9);
+	/* border: 2px solid rgba(3, 238, 255, 0.9); */
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
 	padding: 20px 10px;
 	margin: 55px;
 	margin-top: -150px;
@@ -2220,21 +2227,46 @@ input#sustain-pre:checked +label.sustain>div.modal-back{
 	transform: rotateY(0deg);
 	transition: transform 0.5s ease-out;
 }
+
+.prizes-ol {
+	/* border: white 1px solid; */
+	/* display: flex;
+	justify-content: center;
+	flex-wrap: wrap; */
+	padding-inline-start: 0;
+	width: 100%;
+}
+.center {
+	align-items: center;
+}
+.kyu {
+	justify-content: center;
+	margin-right: 10px;
+}
+.prizes-li {
+	padding-top: 0.67rem;
+}
+
 .speakers-top-left .prizes_sec .card:hover {
 	/* background-color: rgba(3, 238, 255, 0.9); */
-	border: 2px solid;
-	box-shadow: 5px 5px 5px #888;
+	/* border: 2px solid; */
+	/* box-shadow: 5px 5px 5px #888; */
 	/* transform: rotate(360deg); */
 	/* backdrop-filter: blur(5px); */
-	transform: perspective(1000px) rotateY(10deg) rotateX(-10deg);
+	/* transform: perspective(1000px) rotateY(10deg) rotateX(-10deg); */
 }
 .speakers-top-left .prizes_sec .card h1 {
-	font-size: 26px;
+	font-size: 36px;
 	text-align: center;
 	color: #fff;
 	margin-bottom: 30px;
 }
-
+.speakers-top-left .prizes_sec .card h2 {
+	font-size: 30px;
+	text-align: center;
+	color: #fff;
+	margin-bottom: 30px;
+}
 .speakers-top-left .prizes_sec .card span {
 	color: white;
 	font-size: 20px;
