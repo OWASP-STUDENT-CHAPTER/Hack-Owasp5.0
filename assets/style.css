@@ -2196,6 +2196,7 @@ input#sustain-pre:checked +label.sustain>div.modal-back{
 
 .speakers-top-left .prizes_sec {
 	display: flex;
+	flex-direction: row;
 	align-items: flex-end !important;
 	margin-top: 25vh;
 	justify-content: center;
@@ -2213,7 +2214,7 @@ input#sustain-pre:checked +label.sustain>div.modal-back{
 .speakers-top-left .prizes_sec .card {
 	width: 320px;
 	min-height: 500px;
-	backdrop-filter: ;
+	backdrop-filter: 10px;
 	background-color: rgba(33, 92, 108, 0.7);
 	border-radius: 15px;
 	/* border: 2px solid rgba(3, 238, 255, 0.9); */
@@ -2300,6 +2301,12 @@ input#sustain-pre:checked +label.sustain>div.modal-back{
 		margin-top: 0vh;
 		/* justify-content: center; */
 		align-items: center;
+	}
+	.speakers-top-left .prizes_sec :nth-child(1) {
+		order: 1;
+	}
+	.speakers-top-left .prizes_sec :nth-child(3) {
+		order: 2;
 	}
 	.speakers-top-left .prizes_sec .card {
 		margin-top: 10px;
